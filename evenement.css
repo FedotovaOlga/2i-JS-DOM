@@ -1,0 +1,14 @@
+#parent, #enfant {
+    border: 2px solid black;
+}
+
+#parent {
+    height: 40vh;
+    background-color: teal;
+}
+
+#enfant {
+    margin-top: 50px;
+    height: 20vh;
+    background-color: gold;
+}

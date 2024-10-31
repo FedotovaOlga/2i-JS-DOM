@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evènements</title>
+    <script src="./evenement.js" defer></script>
+    <link rel="stylesheet" href="evenement.css">
+</head>
+<body>
+    <h1>Les évènements</h1>
+    <div>
+        <h2>Associer un evenement à un HTMLElement</h2>
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" autocomplete="off">
+        <button>
+            dire bonjour
+        </button>
+        <h2>Supprimer l'association (Dissosier) evenement/HTMLElement</h2>
+        <button>
+            supprimer event
+        </button>
+    </div>
+    <div>
+        <h2>Objet Event</h2>
+        <label for="prenom">Prenom</label>
+        <input type="text" id="nom" autocomplete="off" oninput="afficherPrenom(event)">
+    </div>
+    <div>
+        <h2>Annuler un evenement</h2>
+        <label for="texte">Texte en minuscule</label>
+        <input type="text" id="texte" autocomplete="off" onkeypress="verifierTexte(event)">
+    </div>
+    <div id="parent" onclick="parent()">
+        parent
+        <div id="enfant" onclick="enfant(event)">
+            enfant
+        </div>
+
+    </div>
+</body>
+</html>

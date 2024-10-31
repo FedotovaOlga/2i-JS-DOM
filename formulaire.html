@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./formulaire.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire</title>
+  </head>
+  <body>
+    <h1>Formulaires</h1>
+    <div>
+      <div>
+        Genre
+        <input type="radio" name="genre" id="Monsieur" checked />Monsieur
+        <input type="radio" name="genre" id="Madame" />Madame
+      </div>
+      <div>
+        <label for="nom">Nom</label>
+        <input type="text" name="nom" id="nom" autocomplete="off" />
+        <button onclick="direBonjour()" id="bonjour">dire bonjour</button>
+      </div>
+      <div>
+        <h2>Les listes déroulantes (Combobox)</h2>
+        <div>
+          <label for="sports">Sports</label>
+          <select id="sports" multiple>
+            <option value="foot">Foot</option>
+            <option value="hand">Hand</option>
+            <option value="basket">Basket</option>
+            <option value="tennis">Tennis</option>
+            <option value="hockey">Hockey</option>
+            <option value="box">Box</option>
+          </select>
+          <button onclick="ajoutSport()">></button>
+          <label for="sportsPreferes">Sports préférés : </label>
+          <select id="sportsPreferes" multiple></select>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

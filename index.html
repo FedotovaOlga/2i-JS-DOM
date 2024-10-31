@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS + DOM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Manipulation du DOM</h1>
+    <h2>Récupération d'éléments HTML</h2>
+    <div id="intro">
+      Les paragraphes:
+      <p class="gras rouge">Bonjour</p>
+      <p class="bleu">Bonsoir</p>
+      <p class="rouge">
+        Salut,
+        <a href="https://www.linkedin.com/in/fedotova-olga/" target="_blank">
+          Clicquez pour consulter ma page
+        </a>
+      </p>
+      <div class="rouge">Hello</div>
+    </div>
+    <div>
+      <h2>Manipulation d'éttribut</h2>
+      <button onclick="recupererAttribut()">récupérer attribut</button>
+      <button onclick="modifierAttribut()">modifier attribut</button>
+      <button onclick="supprimerAttribut()">supprimer attribut</button>
+    </div>
+    <div>
+      <h2>Manipulation de classes</h2>
+      <button onclick="afficherClassName()">className</button>
+      <button onclick="afficherClassList()">classList</button>
+      <button onclick="supprimerClasse()">Supprimer classe</button>
+      <button onclick="ajouterClasse()">Ajouter classe</button>
+      <button onclick="remplacerClasse()">Remplacer classe</button>
+      <button onclick="basculerClasse()">Basculer classe</button>
+      <button onclick="changerCouleur()">Changer couleur</button>
+    </div>
+    <div>
+      <h2>Manipulation de style</h2>
+      <button onclick="modifierStyle()">
+        modifier style
+      </button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./editeur-texte.js" defer></script>
+    <title>Editeur de texte</title>
+</head>
+<body>
+    <h1>Editeur de texte</h1>
+    <div>
+        <div id="pilotage">
+            <input type="checkbox" name="fontWeight" id="bold">Gras
+            <input type="checkbox" name="fontStyle" id="italic">Italic
+            <input type="checkbox" name="textDecoration" id="underline">Souligné
+            <input type="radio" name="color" id="tomato">Rouge
+            <input type="radio" name="color" id="skyblue">Bleu
+            <input type="radio" name="color" id="teal">Vert
+        </div>
+        <div>
+            <label for="texte">Texte</label>
+            <textarea id="texte"></textarea>
+            <button onclick="ajouterTexte()">ajouter</button>
+        </div>
+        <div id="textes">
+
+        </div>
+    </div>
+
+    
+</body>
+</html>
